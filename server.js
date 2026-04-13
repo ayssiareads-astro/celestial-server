@@ -29,4 +29,5 @@ app.post("/chart", async (req, res) => {
   }
 });
 app.get("/", (req, res) => res.json({ status: "running" }));
-app.listen(process.env.PORT || 3001, () => console.log("Server started"));
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, "0.0.0.0", () => console.log("Server started on port " + PORT));
