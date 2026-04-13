@@ -43,7 +43,7 @@ app.post("/chart", async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 });
-app.get("/", (req, res) => res.json({ status: "running" }));
+
 app.get("/", (req, res) => res.json({ status: "running" }));
 
 const PORT = process.env.PORT || 3001;
