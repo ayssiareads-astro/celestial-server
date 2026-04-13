@@ -1,1 +1,1 @@
-# celestial-server
+# celestial-insights-app
